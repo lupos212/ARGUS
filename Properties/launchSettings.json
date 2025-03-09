@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "ARGUS (Package)": {
+      "commandName": "MsixPackage"
+    },
+    "ARGUS (Unpackaged)": {
+      "commandName": "Project"
+    }
+  }
+}
