@@ -1,0 +1,35 @@
+﻿<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <!-- Custom style for NavigationView -->
+    <Style TargetType="NavigationView">
+        <Setter Property="Background" Value="Orange"/>
+        <Setter Property="Foreground" Value="RED"/>
+    </Style>
+
+    <!-- Custom style for NavigationViewItem -->
+    <Style TargetType="NavigationViewItem">
+        <Setter Property="Foreground" Value="Blue"/>
+        <Setter Property="Margin" Value="0,5,0,5"/>
+        <Setter Property="Padding" Value="12,8,12,8"/>
+    </Style>
+
+    <!-- Custom style for TextBlock inside NavigationViewItem -->
+    <Style TargetType="TextBlock">
+        <Setter Property="Foreground" Value="Red"/>
+    </Style>
+
+    <!-- Custom style for Back Button -->
+    <Style x:Key="NavigationViewBackButtonStyle" TargetType="Button">
+        <Setter Property="Content" Value="&#xE72B;" />
+        <!-- Using Segoe MDL2 Assets for Back Icon -->
+        <Setter Property="FontFamily" Value="Segoe MDL2 Assets" />
+        <Setter Property="Background" Value="Transparent" />
+        <Setter Property="Foreground" Value="White" />
+        <Setter Property="BorderBrush" Value="Transparent" />
+        <Setter Property="BorderThickness" Value="0" />
+        <Setter Property="Padding" Value="12,12,12,12" />
+    </Style>
+
+</ResourceDictionary>

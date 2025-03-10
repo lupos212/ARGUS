@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="utf-8"?>
 <Window
     x:Class="ARGUS.MainWindow"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
@@ -9,7 +8,29 @@
     mc:Ignorable="d"
     Title="ARGUS">
 
-    <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
-        <Button x:Name="myButton" Click="myButton_Click">Click Me</Button>
-    </StackPanel>
+    <Grid>
+        <Grid.Background>
+            <SolidColorBrush Color="RED"/>
+        </Grid.Background>
+
+        <NavigationView
+            x:Name="AppNavigationView"
+            IsPaneOpen="True"
+            OpenPaneLength="200"
+            CompactPaneLength="56"
+            IsBackButtonVisible="Collapsed"
+            SelectionChanged="NavigationView_SelectionChanged">
+
+            <NavigationView.MenuItems>
+                <NavigationViewItem Content="Home" Icon="Home" Tag="HomePage"/>
+                <NavigationViewItem Content="Tools" Icon="Repair" Tag="ToolsPage"/>
+                <NavigationViewItem Content="Databases" Icon="Library" Tag="DatabasesPage"/>
+                <NavigationViewItem Content="Data Entry" Icon="Edit" Tag="DataEntryPage"/>
+                <NavigationViewItem Content="Reports" Icon="Library" Tag="ReportsPage"/>
+                <NavigationViewItem Content="Settings" Icon="Setting" Tag="SettingsPage"/>
+            </NavigationView.MenuItems>
+
+            <Frame x:Name="ContentFrame" />
+        </NavigationView>
+    </Grid>
 </Window>

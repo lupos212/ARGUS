@@ -6,10 +6,27 @@
     xmlns:local="using:ARGUS.Views"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    mc:Ignorable="d"
-    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    mc:Ignorable="d">
 
     <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
 
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="Auto"/>
+        </Grid.ColumnDefinitions>
+
+        <!-- Back Button -->
+        <Button Content="Back" Click="BackButton_Click" VerticalAlignment="Center" HorizontalAlignment="Left" Grid.Column="0"/>
+
+        <!-- Centered Title -->
+        <TextBlock Text="R E S I D E N C E  E N T  R Y   P A G  E" VerticalAlignment="Center" HorizontalAlignment="Center" Style="{StaticResource PageTitleStyle}" Grid.Column="1" Margin="10,0,0,0"/>
+
+        <!-- Empty Column for Spacing -->
+        <Grid Grid.Column="2"/>
     </Grid>
 </Page>

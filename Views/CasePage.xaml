@@ -6,10 +6,17 @@
     xmlns:local="using:ARGUS.Views"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    mc:Ignorable="d"
-    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    mc:Ignorable="d">
 
     <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
 
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="20">
+            <Button Content="Back" Click="BackButton_Click" VerticalAlignment="Center"/>
+            <TextBlock Text="C A S E   M A N A G E M E N T" Style="{StaticResource PageTitleStyle}"/>
+        </StackPanel>
     </Grid>
 </Page>
