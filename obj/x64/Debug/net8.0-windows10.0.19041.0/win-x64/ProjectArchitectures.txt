@@ -1,0 +1,1 @@
+C:\WORK\ARGUS\ARGUS\ARGUS.csproj;x64

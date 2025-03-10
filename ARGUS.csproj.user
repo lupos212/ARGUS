@@ -11,6 +11,30 @@
     <None Update="Package.appxmanifest">
       <SubType>Designer</SubType>
     </None>
+    <Page Update="Views\ReconPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\DatabasesPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\ToolsPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Resources\NavigationStyle.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\ReportsPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\SettingsPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\DataEntryPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\HomePage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="Resources\ListView.xaml">
       <SubType>Designer</SubType>
     </Page>

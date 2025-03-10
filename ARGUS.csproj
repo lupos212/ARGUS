@@ -12,6 +12,16 @@
     <EnableMsixTooling>true</EnableMsixTooling>
     <Nullable>enable</Nullable>
   </PropertyGroup>
+  <ItemGroup>
+    <None Remove="Resources\NavigationStyle.xaml" />
+    <None Remove="Views\DatabasesPage.xaml" />
+    <None Remove="Views\DataEntryPage.xaml" />
+    <None Remove="Views\HomePage.xaml" />
+    <None Remove="Views\ReconPage.xaml" />
+    <None Remove="Views\ReportsPage.xaml" />
+    <None Remove="Views\SettingsPage.xaml" />
+    <None Remove="Views\ToolsPage.xaml" />
+  </ItemGroup>
 
   <ItemGroup>
     <Content Include="Assets\SplashScreen.scale-200.png" />
@@ -38,6 +48,54 @@
   <ItemGroup>
     <PackageReference Include="Microsoft.Windows.SDK.BuildTools" Version="10.0.26100.1742" />
     <PackageReference Include="Microsoft.WindowsAppSDK" Version="1.6.250205002" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Data\CaseManagementDB\" />
+    <Folder Include="Data\ConfidentialInformantsDB\" />
+    <Folder Include="Data\ReconDB\" />
+    <Folder Include="Data\ResidencesDB\" />
+    <Folder Include="Data\VehicleRegistrationDB\" />
+    <Folder Include="NewFolder\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="Views\ReconPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="Views\DatabasesPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="Views\ToolsPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="Resources\NavigationStyle.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="Views\ReportsPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="Views\SettingsPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="Views\DataEntryPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="Views\HomePage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
 
   <!--
